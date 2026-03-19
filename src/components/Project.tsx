@@ -41,9 +41,9 @@ function Project() {
 
                 <p>
                     <b>End result</b>:<br></br>
-                    - Improved early‑game onboarding and reduced missed progression opportunities.<br></br>
-                    - Increased player retention and overall satisfaction with the progression loop.<br></br>
-                    - Well‑received by both new players and long‑time Warframe veterans.
+                    - Reduced early-game confusion and improved player progression clarity.<br></br>
+                    - Helped guide players toward key progression systems, increasing engagement with core gameplay loops.<br></br>
+                    - Increased player retention and overall satisfaction with the progression loop.
                 </p>
             </div>
             <div className="project">
@@ -79,6 +79,7 @@ function Project() {
             <div className="project">
                 <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><h2>Asset Validation Tool</h2></a>
                 <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><img src={assetToolsThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
+                <p>A production-style C++ tooling project designed to simulate real-world asset pipeline systems used in game development.</p>
                 <p>
                     <b>Problem:</b>
                     <br></br>
