@@ -1,7 +1,7 @@
 import React from "react";
 import warframeOfferHighlightThumbnail from '../assets/images/warframe/offer_highlight/offer_highlight_design.png';
 import warframeBreadcrumbingThumbnail from '../assets/images/warframe/breadcrumbing/breadcrumbing_pause_arsenal.png';
-import unrealPerformanceThumbnail from '../assets/images/bg-dark.png';
+import unrealPerformanceThumbnail from '../assets/images/unreal_automation/performance_test_graph.jpg';
 import assetToolsThumbnail from '../assets/images/asset-tools-thumbnail.png';
 import '../assets/styles/Project.scss';
 
