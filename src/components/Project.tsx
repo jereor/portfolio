@@ -2,6 +2,7 @@ import React from "react";
 import warframeOfferHighlightThumbnail from '../assets/images/warframe/offer_highlight/offer_highlight_design.png';
 import warframeBreadcrumbingThumbnail from '../assets/images/warframe/breadcrumbing/breadcrumbing_pause_arsenal.png';
 import unrealPerformanceThumbnail from '../assets/images/unreal_automation/performance_test_graph.jpg';
+import unityPackagesThumbnail from '../assets/images/unity_packages/localization_system_diagram.png'
 import assetToolsThumbnail from '../assets/images/asset-tools-thumbnail.png';
 import '../assets/styles/Project.scss';
 
@@ -70,6 +71,23 @@ function Project() {
                     - Tech artists got tangible data on which levels and sub-areas in the game were struggling to run on mobile.<br></br>
                     - We knew exactly which devices were having performance issues.<br></br>
                     - Our team was able to provide the client with visual graphs about the game's performance improvements every month. 
+                </p>
+            </div>
+            <div className="project">
+                <h2>Unity Localization System</h2>
+                <img src={unityPackagesThumbnail} className="zoom" alt="thumbnail" width="100%"/>
+                <p>
+                    <b>Problem:</b>
+                    <br></br>
+                    Localization systems were repeatedly implemented from scratch across projects, leading to duplicated effort and inconsistent implementations.
+                </p>
+                <p><b>Solution:</b></p>
+                <p>Designed and developed a <b>reusable localization system in C#</b> to standardize functionality across multiple Unity projects.</p>
+                <p>Implemented a <b>wrapper-based architecture</b> to unify different third-party localization solutions behind a single, consistent interface. </p>
+                <p>Built the system using <b>test-driven development {'(TDD)'}</b> to ensure reliability and maintainability.</p>
+                <p>
+                    <b>End result</b>:<br></br>
+                    Reduced development time across projects and lowered the barrier for adopting localization as a standard feature.
                 </p>
             </div>
         </div>
