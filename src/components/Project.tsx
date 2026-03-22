@@ -97,26 +97,29 @@ function Project() {
                 <p>
                     <b>Problems:</b>
                     <br></br>
-                    - Unity’s built-in tagging system is limited {'(e.g. only one tag per entity)'}.<br></br>
+                    - Unity’s built-in tagging system is limited (e.g. only one tag per entity).<br></br>
                     - There was confusion between tags and flags, leading to misuse and poor system design.<br></br>
-                    - Existing approaches {'(like spreadsheets)'} introduced high risk of human error, merge conflicts, and scalability issues.<br></br>
+                    - Existing approaches (like spreadsheets) introduced high risk of human error, merge conflicts, and scalability issues.<br></br>
                     - Gameplay systems needed a way to identify entities reliably and query groups of entities efficiently.
                 </p>
                 <p><b>Solution:</b></p>
                 <p>
-                    Designed and built a custom tagging system with a clear pipeline:<br></br>
-                    - <b>Tag Creation</b>: Tags defined as scriptable data in Unity, stored in a central database, with proper validation and UX {'(e.g. autocomplete, duplication prevention)'}.<br></br>
-                    - <b>Tag Assignment</b>: Tags assigned to entities inside Unity during creation workflows, with proper tooling {'(e.g. search, autocomplete)'}.<br></br>
-                    - <b>Tag Utility in Unity</b>: Tools to query and visualize entities in scenes using tags, with edicated editor windows to display query results {'(supports logical queries with INCLUDES/EXCLUDES)'}<br></br>
+                    Designed and built a <b>custom tagging system in C#</b> with a clear pipeline:<br></br>
+                    - <b>Tag Creation</b>: Tags defined as scriptable data in Unity, stored in a central database, with proper validation and UX (e.g. autocomplete, duplication prevention).<br></br>
+                    - <b>Tag Assignment</b>: Tags assigned to entities inside Unity during creation workflows, with proper tooling (e.g. search, autocomplete).<br></br>
+                    - <b>Tag Utility in Unity</b>: Tools to query and visualize entities in scenes using tags, with edicated editor windows to display query results (supports logical queries with INCLUDES/EXCLUDES)<br></br>
                     - <b>Tag Utility in Gameplay</b>: Gameplay systems use tag queries to check if an entity has tags, and to retrieve groups of entities from the server
                 </p>
-                <p>Tags = identity (persistent, queryable)</p>
-                <p>Flags = state (temporary, runtime-only)</p>
+                 <p>
+                    Tags = identity (persistent, queryable)<br></br>
+                    Flags = state (temporary, runtime-only)
+                </p>
+                <p>Built the system using test-driven development (TDD) to ensure reliability and maintainability.</p>
                 <p>
                     <b>End result</b>:<br></br>
                     A scalable, flexible tagging system that:<br></br>
                     - Supports multiple tags per entity<br></br>
-                    - Enables powerful querying {'(both in editor and gameplay)'}<br></br>
+                    - Enables powerful querying (both in editor and gameplay)<br></br>
                     - Reduces errors and ambiguity<br></br>
                     - Improves designer workflow and iteration speed
                 </p>
