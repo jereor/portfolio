@@ -1,8 +1,9 @@
 import React from "react";
 import warframeOfferHighlightThumbnail from '../assets/images/warframe/offer_highlight/offer_highlight_design.png';
 import warframeBreadcrumbingThumbnail from '../assets/images/warframe/breadcrumbing/breadcrumbing_pause_arsenal.png';
-import unrealPerformanceThumbnail from '../assets/images/unreal_automation/performance_test_graph.jpg';
-import unityPackagesThumbnail from '../assets/images/unity_packages/localization_system_diagram.png'
+import unrealPerformanceThumbnail from '../assets/images/unreal/performance_test_graph.jpg';
+import unityLocalizationThumbnail from '../assets/images/unity/localization_system_diagram.png'
+import unityTaggingThumbnail from '../assets/images/unity/tagging_system_diagram.png'
 import assetToolsThumbnail from '../assets/images/asset-tools-thumbnail.png';
 import '../assets/styles/Project.scss';
 
@@ -75,7 +76,7 @@ function Project() {
             </div>
             <div className="project">
                 <h2>Unity Localization System</h2>
-                <img src={unityPackagesThumbnail} className="zoom" alt="thumbnail" width="100%"/>
+                <img src={unityLocalizationThumbnail} className="zoom" alt="thumbnail" width="100%"/>
                 <p>
                     <b>Problem:</b>
                     <br></br>
@@ -90,7 +91,38 @@ function Project() {
                     Reduced development time across projects and lowered the barrier for adopting localization as a standard feature.
                 </p>
             </div>
+            <div className="project">
+                <h2>Unity Tagging System</h2>
+                <img src={unityTaggingThumbnail} className="zoom" alt="thumbnail" width="100%"/>
+                <p>
+                    <b>Problems:</b>
+                    <br></br>
+                    - Unity’s built-in tagging system is limited {'(e.g. only one tag per entity)'}.<br></br>
+                    - There was confusion between tags and flags, leading to misuse and poor system design.<br></br>
+                    - Existing approaches {'(like spreadsheets)'} introduced high risk of human error, merge conflicts, and scalability issues.<br></br>
+                    - Gameplay systems needed a way to identify entities reliably and query groups of entities efficiently.
+                </p>
+                <p><b>Solution:</b></p>
+                <p>
+                    Designed and built a custom tagging system with a clear pipeline:<br></br>
+                    - <b>Tag Creation</b>: Tags defined as scriptable data in Unity, stored in a central database, with proper validation and UX {'(e.g. autocomplete, duplication prevention)'}.<br></br>
+                    - <b>Tag Assignment</b>: Tags assigned to entities inside Unity during creation workflows, with proper tooling {'(e.g. search, autocomplete)'}.<br></br>
+                    - <b>Tag Utility in Unity</b>: Tools to query and visualize entities in scenes using tags, with edicated editor windows to display query results {'(supports logical queries with INCLUDES/EXCLUDES)'}<br></br>
+                    - <b>Tag Utility in Gameplay</b>: Gameplay systems use tag queries to check if an entity has tags, and to retrieve groups of entities from the server
+                </p>
+                <p>Tags = identity (persistent, queryable)</p>
+                <p>Flags = state (temporary, runtime-only)</p>
+                <p>
+                    <b>End result</b>:<br></br>
+                    A scalable, flexible tagging system that:<br></br>
+                    - Supports multiple tags per entity<br></br>
+                    - Enables powerful querying {'(both in editor and gameplay)'}<br></br>
+                    - Reduces errors and ambiguity<br></br>
+                    - Improves designer workflow and iteration speed
+                </p>
+            </div>
         </div>
+
 
         <h1>Personal Projects</h1>
         <div className="projects-grid">
