@@ -1,14 +1,10 @@
 import React, {useState, useEffect} from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout"
 import {
-  Main,
-  Timeline,
-  Skills,
-  Project,
-  Contact,
-  Navigation,
-  Footer,
-} from "./components";
-import FadeIn from './components/FadeIn';
+    HomePage,
+    ProjectDetails
+} from "./pages";
 import './index.scss';
 
 function App() {
@@ -27,17 +23,12 @@ function App() {
       }, []);
 
     return (
-    <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
-        <FadeIn transitionDuration={700}>
-            <Main/>
-            <Skills/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
-        </FadeIn>
-        <Footer />
-    </div>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<HomePage />} />
+                <Route path="projects/:id" element={<ProjectDetails />} />
+            </Route>
+        </Routes>
     );
 }
 

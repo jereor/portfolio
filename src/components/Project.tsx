@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import warframeOfferHighlightThumbnail from '../assets/images/warframe/offer_highlight/offer_highlight_design.png';
 import warframeBreadcrumbingThumbnail from '../assets/images/warframe/breadcrumbing/breadcrumbing_pause_arsenal.png';
 import unrealPerformanceThumbnail from '../assets/images/unreal/performance_test_graph.jpg';
@@ -13,20 +13,9 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><h2>Asset Validation & Pipeline Tool (C++)</h2></a>
-                <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><img src={assetToolsThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
+                <Link to="/projects/asset-tools"><h2>Asset Validation & Pipeline Tool (C++)</h2></Link>
+                <Link to="/projects/asset-tools"><img src={assetToolsThumbnail} className="zoom" alt="thumbnail" width="100%"/></Link>
                 <p>A production-style C++ tooling project designed to simulate real-world asset pipeline systems used in game development.</p>
-                <p>
-                    <b>Problem:</b>
-                    <br></br>
-                    Game teams rely heavily on internal tools for asset validation, content pipelines, and debugging, but those systems are often scattered across projects.
-                </p>
-                <p><b>Solution:</b></p>
-                <p>Designed and implemented a <b>C++ internal tools prototype focused on asset validation</b>. </p>
-                <p>Architected with clear module boundaries and separation between engine and tooling code.</p>
-                <p>Built reusable core libraries, <b>CMake‑based project structure</b>, and production‑style logging suitable for CI workflows.</p>
-                <p>Implemented a version controlled configuration layer for tool behavior and validation rules to ensure deterministic behavior across different users and CI.</p>
-                <p>Integrates effortlessly into <b>Jenkins CI</b> using <b>Docker</b>.</p>
             </div>
         </div>
 

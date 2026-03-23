@@ -6,11 +6,11 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
-function Timeline() {
+function Career() {
   return (
-    <div id="history">
+    <div id="career">
       <div className="items-container">
-        <h1>Experience</h1>
+        <h1>Career</h1>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -32,4 +32,4 @@ function Timeline() {
   );
 }
 
-export default Timeline;
+export default Career;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -17,7 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Skills', 'skills'], ['Experience', 'experience'], ['Projects', 'projects'], ['Contact', 'contact']];
+const navItems = [['Skills', 'skills'], ['Career', 'career'], ['Projects', 'projects'], ['Contact', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -46,14 +47,22 @@ function Navigation({parentToChild, modeChange}: any) {
     };
   }, []);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const scrollToSection = (section: string) => {
     console.log(section)
-    const skillsElement = document.getElementById(section);
-    if (skillsElement) {
-      skillsElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', skillsElement);  // Debugging: Ensure the element is found
+    if (location.pathname === "/") {
+      const element = document.getElementById(section);
+      if (element) {
+        console.log('Scrolling to:', element);
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState({}, document.title);
+      } else {
+        console.error('Element not found: ', section);
+      }
     } else {
-      console.error('Element with id "skills" not found');  // Debugging: Log error if element is not found
+      navigate("/", { state: { section } });
     }
   };
 
