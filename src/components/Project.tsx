@@ -10,46 +10,31 @@ import '../assets/styles/Project.scss';
 function Project() {
     return(
     <div className="projects-container" id="projects">
-        <h1>Work Projects</h1>
+        <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><h2>Warframe - In-App Store Offer Highlights</h2></a>
-                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><img src={warframeOfferHighlightThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><h2>Asset Validation & Pipeline Tool (C++)</h2></a>
+                <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><img src={assetToolsThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
+                <p>A production-style C++ tooling project designed to simulate real-world asset pipeline systems used in game development.</p>
                 <p>
                     <b>Problem:</b>
                     <br></br>
-                    Conversion and revenue need to be improved, but new players do not know about all the cool offers in the in-game store.
+                    Game teams rely heavily on internal tools for asset validation, content pipelines, and debugging, but those systems are often scattered across projects.
                 </p>
                 <p><b>Solution:</b></p>
-                <p>Designed and implemented a <b>C++ system to surface curated in‑game offers</b> whenever players opened the pause menu.</p>
-                <p>Implemented algorithms to prioritize limited‑time offers and high‑value premium bundles.</p>
-                <p>Streamlined the purchase flow by deep‑linking directly to the purchase screen.</p>
-                <p>
-                    <b>End result</b>:<br></br>
-                    <b>~10% increase in conversion and revenue.</b>
-                </p>
+                <p>Designed and implemented a <b>C++ internal tools prototype focused on asset validation</b>. </p>
+                <p>Architected with clear module boundaries and separation between engine and tooling code.</p>
+                <p>Built reusable core libraries, <b>CMake‑based project structure</b>, and production‑style logging suitable for CI workflows.</p>
+                <p>Implemented a version controlled configuration layer for tool behavior and validation rules to ensure deterministic behavior across different users and CI.</p>
+                <p>Integrates effortlessly into <b>Jenkins CI</b> using <b>Docker</b>.</p>
             </div>
-            <div className="project">
-                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><h2>Warframe - Menu Breadcrumbing System</h2></a>
-                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><img src={warframeBreadcrumbingThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
-                <p>
-                    <b>Problem:</b>
-                    <br></br>
-                    Mobile players are quitting the game after Day 1, because progression is confusing and players don't know what to do next and how to upgrade their gear.
-                </p>
-                
-                <p><b>Solution:</b></p>
-                <p>Implemented a <b>C++-based UI guidance system</b> to help players discover newly unlocked quests, equipment, and upgrades.</p>
+        </div>
 
-                <p>
-                    <b>End result</b>:<br></br>
-                    - Reduced early-game confusion and improved player progression clarity.<br></br>
-                    - Helped guide players toward key progression systems, increasing engagement with core gameplay loops.<br></br>
-                    - Increased player retention and overall satisfaction with the progression loop.
-                </p>
-            </div>
+        <h1>Work Projects</h1>
+        <div className="projects-grid">
+            
             <div className="project">
-                <a href="https://urn.fi/URN:NBN:fi:amk-202305047661" target="_blank" rel="noreferrer"><h2>Unreal Engine performance test automation</h2></a>
+                <a href="https://urn.fi/URN:NBN:fi:amk-202305047661" target="_blank" rel="noreferrer"><h2>Unreal Engine Automated Performance Testing Framework (C++)</h2></a>
                 <a href="https://urn.fi/URN:NBN:fi:amk-202305047661" target="_blank" rel="noreferrer"><img src={unrealPerformanceThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
                 <p>
                     <b>Problem:</b>
@@ -74,25 +59,47 @@ function Project() {
                     - Our team was able to provide the client with visual graphs about the game's performance improvements every month. 
                 </p>
             </div>
+
             <div className="project">
-                <h2>Unity Localization System</h2>
-                <img src={unityLocalizationThumbnail} className="zoom" alt="thumbnail" width="100%"/>
+                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><h2>Warframe In-Game Store Offer System (C++/Lua)</h2></a>
+                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><img src={warframeOfferHighlightThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
                 <p>
                     <b>Problem:</b>
                     <br></br>
-                    Localization systems were repeatedly implemented from scratch across projects, leading to duplicated effort and inconsistent implementations.
+                    Conversion and revenue need to be improved, but new players do not know about all the cool offers in the in-game store.
                 </p>
                 <p><b>Solution:</b></p>
-                <p>Designed and developed a <b>reusable localization system in C#</b> to standardize functionality across multiple Unity projects.</p>
-                <p>Implemented a <b>wrapper-based architecture</b> to unify different third-party localization solutions behind a single, consistent interface. </p>
-                <p>Built the system using <b>test-driven development {'(TDD)'}</b> to ensure reliability and maintainability.</p>
+                <p>Designed and implemented a <b>C++ system to surface curated in‑game offers</b> whenever players opened the pause menu.</p>
+                <p>Implemented algorithms to prioritize limited‑time offers and high‑value premium bundles.</p>
+                <p>Streamlined the purchase flow by deep‑linking directly to the purchase screen.</p>
                 <p>
                     <b>End result</b>:<br></br>
-                    Reduced development time across projects and lowered the barrier for adopting localization as a standard feature.
+                    <b>~10% increase in conversion and revenue.</b>
                 </p>
             </div>
+
             <div className="project">
-                <h2>Unity Tagging System</h2>
+                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><h2>Warframe Player Progression Guidance System (C++/Lua)</h2></a>
+                <a href="https://play.google.com/store/apps/details?id=com.digitalextremes.warframemobile" target="_blank" rel="noreferrer"><img src={warframeBreadcrumbingThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
+                <p>
+                    <b>Problem:</b>
+                    <br></br>
+                    Mobile players are quitting the game after Day 1, because progression is confusing and players don't know what to do next and how to upgrade their gear.
+                </p>
+                
+                <p><b>Solution:</b></p>
+                <p>Implemented a <b>C++-based UI guidance system</b> to help players discover newly unlocked quests, equipment, and upgrades.</p>
+
+                <p>
+                    <b>End result</b>:<br></br>
+                    - Reduced early-game confusion and improved player progression clarity.<br></br>
+                    - Helped guide players toward key progression systems, increasing engagement with core gameplay loops.<br></br>
+                    - Increased player retention and overall satisfaction with the progression loop.
+                </p>
+            </div>
+
+            <div className="project">
+                <h2>Unity Tagging & Query System (C#)</h2>
                 <img src={unityTaggingThumbnail} className="zoom" alt="thumbnail" width="100%"/>
                 <p>
                     <b>Problems:</b>
@@ -124,28 +131,27 @@ function Project() {
                     - Improves designer workflow and iteration speed
                 </p>
             </div>
-        </div>
 
-
-        <h1>Personal Projects</h1>
-        <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><h2>Asset Validation Tool</h2></a>
-                <a href="https://github.com/jereor/asset-tools/" target="_blank" rel="noreferrer"><img src={assetToolsThumbnail} className="zoom" alt="thumbnail" width="100%"/></a>
-                <p>A production-style C++ tooling project designed to simulate real-world asset pipeline systems used in game development.</p>
+                <h2>Unity Localization Framework (C#)</h2>
+                <img src={unityLocalizationThumbnail} className="zoom" alt="thumbnail" width="100%"/>
                 <p>
                     <b>Problem:</b>
                     <br></br>
-                    Game teams rely heavily on internal tools for asset validation, content pipelines, and debugging, but those systems are often scattered across projects.
+                    Localization systems were repeatedly implemented from scratch across projects, leading to duplicated effort and inconsistent implementations.
                 </p>
                 <p><b>Solution:</b></p>
-                <p>Designed and implemented a <b>C++ internal tools prototype focused on asset validation</b>. </p>
-                <p>Architected with clear module boundaries and separation between engine and tooling code.</p>
-                <p>Built reusable core libraries, <b>CMake‑based project structure</b>, and production‑style logging suitable for CI workflows.</p>
-                <p>Implemented a version controlled configuration layer for tool behavior and validation rules to ensure deterministic behavior across different users and CI.</p>
-                <p>Integrates effortlessly into <b>Jenkins CI</b> using <b>Docker</b>.</p>
+                <p>Designed and developed a <b>reusable localization system in C#</b> to standardize functionality across multiple Unity projects.</p>
+                <p>Implemented a <b>wrapper-based architecture</b> to unify different third-party localization solutions behind a single, consistent interface. </p>
+                <p>Built the system using <b>test-driven development {'(TDD)'}</b> to ensure reliability and maintainability.</p>
+                <p>
+                    <b>End result</b>:<br></br>
+                    Reduced development time across projects and lowered the barrier for adopting localization as a standard feature.
+                </p>
             </div>
+            
         </div>
+
     </div>
     );
 }
