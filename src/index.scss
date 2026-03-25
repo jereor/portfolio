@@ -92,8 +92,13 @@ p, a, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
+.dark-mode {
+  color: #fff;
+}
+
 .light-mode {
   background-color: #f8f9fa;
+  color: #000;
 
   .navigation-bar {
     background-color: #f8f9fa;
