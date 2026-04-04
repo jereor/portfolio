@@ -12,7 +12,7 @@ export const projects = {
     title: "Asset Validation & Pipeline Tool (C++)",
 
     description:
-      "A production-style C++ tooling project designed to simulate real-world asset pipeline systems used in game development.",
+      "A production-style C++ tooling project designed to simulate real-world asset pipeline systems, focusing on deterministic behavior, CI integration, and modular architecture.",
 
     problems: [
       "Game teams rely heavily on internal tools for asset validation, content pipelines, and debugging, but those systems are often scattered across projects.",
@@ -63,7 +63,7 @@ export const projects = {
     title: "Warframe In-Game Store Offer System (C++/Lua)",
 
     description:
-      "UI feature surfacing curated in-game offers via the pause menu, including prioritization algorithms for limited-time and high-value bundles and a streamlined purchase flow. Resulted in ~10% increase in conversion and revenue.",
+      "UI feature delivering contextual in-game offers via the pause menu — handled game-state and platform edge cases reliably without breaking input, performance, or other UI flows in a large live codebase.",
 
     problems: [
       "Conversion and revenue need to be improved, but new players do not know about all the cool offers in the in-game store.",
@@ -87,7 +87,7 @@ export const projects = {
     title: "Warframe Player Progression Guidance System (C++/Lua)",
 
     description:
-      "UI guidance system improving early-game onboarding and player retention by highlighting newly unlocked quests, equipment, and upgrades.",
+      "End-to-end 'newness' state machine tracking unseen content across many screens — kept correct and persistent against data refresh quirks and UI virtualization in a live, cross-platform environment.",
 
     problems: [
       "Mobile players are quitting the game after Day 1, because progression is confusing and players don't know what to do next and how to upgrade their gear.",
