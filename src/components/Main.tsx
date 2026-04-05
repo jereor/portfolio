@@ -15,7 +15,7 @@ function Main() {
           </div>
           <h1>Jere Orava</h1>
           <p>C++ Tools & Systems Programmer</p>
-          <p><i>"I build tools, pipelines, and automation systems that make teams faster and more efficient."</i></p>
+          <p><i>"I build systems where complex behavior is predictable, failures are visible, and teams can move fast with confidence."</i></p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/jereor" target="_blank" rel="noreferrer"><GitHubIcon/></a>
