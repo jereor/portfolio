@@ -14,8 +14,8 @@ function Main() {
             <a href="https://www.linkedin.com/in/jere-orava-a67445162/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Jere Orava</h1>
-          <p>C++ Tools & Systems Programmer</p>
-          <p><i>"I build systems where complex behavior is predictable, failures are visible, and teams can move fast with confidence."</i></p>
+          <p>Build & Automation Engineer</p>
+          <p><i>"I build systems where failures are visible, behavior is predictable, and teams can ship with confidence — from CI pipelines to production features."</i></p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/jereor" target="_blank" rel="noreferrer"><GitHubIcon/></a>

@@ -21,14 +21,15 @@ const tools = [
     "CMake",
     "AWS",
     "Linux",
-    "Appium"
+    "Appium",
+    "Xcode",
+    "Android Studio"
 ];
 
 const platforms = [
     "Unreal Engine",
     "Unity",
-    "Xcode",
-    "Android Studio"
+    "Proprietary Engines"
 ];
 
 function Skills() {
@@ -36,25 +37,41 @@ function Skills() {
     <div className="container" id="skills">
         <div className="summary-container">
             <p>
-                Development teams lose time to systems that behave differently across environments, fail silently, or require manual intervention to stay stable. <br></br><br></br>
-                <b><i>I solve that class of problem</i></b> — building tools, pipelines, and infrastructure that make complex systems reproducible and teams faster.<br></br><br></br>
-                <b><i>In practice that means</i></b>: deterministic test frameworks that give teams hard data before release, validation pipelines that behave identically across every environment and CI run, <br></br>
+                Most development slowdowns aren't code problems 
+                — they're systems problems. Builds that behave differently across environments. 
+                Tests that pass locally and fail in CI. Features that work until an edge case surfaces in production. 
+                <br></br><br></br>
+                <b><i>I solve that class of problem</i></b> 
+                — building automation frameworks, CI pipelines, and internal tooling that make complex behavior 
+                reproducible, failures visible early, and teams faster as a result.
+                <br></br><br></br>
+                <b><i>In practice that means</i></b>: deterministic test frameworks that give teams hard data 
+                before release, validation pipelines that behave identically across every environment and CI run, <br></br>
                 and production features that handle real-world edge cases without breaking the systems around them.
             </p><br></br>
         </div>
         <div className="skills-container">
             <h1>Skills</h1>
             <p>
-                <b><i>Deterministic systems thinking</i></b>: I've built systems where reproducibility is a hard requirement — not a nice-to-have. From scripting worst-case scenarios across distributed device farms <br></br>
-                to version-controlled configuration that eliminates environment-specific failures, I treat non-determinism as an engineering problem with an engineering solution.
+                <b><i>Deterministic systems thinking</i></b>: Reproducibility is a hard requirement in my work 
+                — not a nice-to-have. 
+                I've scripted worst-case scenarios across distributed device farms, 
+                built version-controlled configuration layers that eliminate environment-specific failures, 
+                and designed CI pipelines that behave identically regardless of where they run. 
+                I treat non-determinism as an engineering problem with an engineering solution.
             </p>
             <p>
-                <b><i>Shipping in large, live codebases</i></b>: My professional work runs in production. That means handling platform edge cases, working across existing system boundaries,  <br></br>
-                and being accountable to other teams who depend on what I build
+                <b><i>Shipping in large, live codebases</i></b>: My professional work runs in production 
+                — in live, cross-platform games with millions of players. 
+                That means handling platform edge cases, working carefully across existing system boundaries, 
+                and being accountable to the teams who depend on what I build. 
+                Correctness and resilience aren't optional when a mistake affects a live product.
             </p>
             <p>
-                <b><i>Infrastructure for teams, not just tasks</i></b>: I build things that scale — reusable libraries, modular architectures, systems consumed by multiple stakeholders.<br></br>
-                I care about the person using the tool as much as the tool itself.
+                <b><i>Infrastructure for teams, not just tasks</i></b>: I build things designed to be used 
+                — reusable libraries, modular architectures, frameworks adopted across multiple projects and teams. 
+                Good tooling reduces friction for the people it serves, so I care as much about the developer experience 
+                of a system as its technical correctness.
             </p>
             <div className="skills-grid">
                 <div className="skill">
