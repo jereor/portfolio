@@ -37,9 +37,9 @@ function Skills() {
     <div className="container" id="skills">
         <div className="summary-container">
             <p>
-                Most development slowdowns aren't code problems 
-                — they're systems problems. Builds that behave differently across environments. 
-                Tests that pass locally and fail in CI. Features that work until an edge case surfaces in production. 
+                Most development slowdowns aren't code problems — <b><i>they're systems problems.</i></b> <br></br>
+                Builds that behave differently across environments. Tests that pass locally and fail in CI. 
+                Features that work until an edge case surfaces in production. 
                 <br></br><br></br>
                 <b><i>I solve that class of problem</i></b> 
                 — building automation frameworks, CI pipelines, and internal tooling that make complex behavior 
