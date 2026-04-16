@@ -30,14 +30,14 @@ function Career() {
 
         <h2>Career Direction</h2>
         <p>
-          I'm looking for a build engineering or automation role where I can go deeper 
-          on CI/CD infrastructure, developer tooling, and the systems that keep live 
+          I'm looking for a <b>build engineering or automation</b> role where I can go 
+          deeper on CI/CD infrastructure, developer tooling, and the systems that keep live 
           products healthy and teams moving fast.
-
+          <br></br><br></br>
           I've shipped production features in live codebases, 
           built automated testing infrastructure for mobile, 
-          and worked alongside designers, QA, and engineers in fast-moving teams. 
-          That's the kind of work I want to keep doing.
+          and worked alongside designers, QA, and engineers in fast-moving teams.<br></br>
+           <b><i>That's the kind of work I want to keep doing.</i></b>
         </p>
       </div>
     </div>
