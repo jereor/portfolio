@@ -30,14 +30,13 @@ function Career() {
 
         <h2>Career Direction</h2>
         <p>
-          I'm looking for a <b>build engineering or automation</b> role where I can go 
-          deeper on CI/CD infrastructure, developer tooling, and the systems that keep live 
-          products healthy and teams moving fast.
+          I'm looking for a <b>game programmer</b> role where I can ship gameplay features and own systems end-to-end 
+          — ideally at a studio where quality and engineering craft are both taken seriously.
           <br></br><br></br>
-          I've shipped production features in live codebases, 
-          built automated testing infrastructure for mobile, 
-          and worked alongside designers, QA, and engineers in fast-moving teams.<br></br>
-           <b><i>That's the kind of work I want to keep doing.</i></b>
+          My tooling and pipeline instincts are a differentiator, not my whole identity:
+          I've worked across the full stack from live gameplay features to the CI infrastructure underneath them.
+          <br></br><br></br>
+          <b><i>If that's what you're looking for, let's talk.</i></b>
         </p>
       </div>
     </div>

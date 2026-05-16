@@ -63,10 +63,10 @@ export const projects = {
     title: "Warframe In-Game Store Offer System (C++/Lua)",
 
     description:
-      "UI feature delivering contextual in-game offers via the pause menu — handled game-state and platform edge cases reliably without breaking input, performance, or other UI flows in a large live codebase.",
+      "UI feature surfacing relevant in-game offers to players via the pause menu — handled complex game-state reliably without breaking input, performance, or other UI flows in a large live codebase.",
 
     problems: [
-      "Conversion and revenue need to be improved, but new players do not know about all the cool offers in the in-game store.",
+      "Players do not know about all the cool offers in the in-game store.",
     ],
 
     solutions: [

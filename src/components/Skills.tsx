@@ -45,13 +45,20 @@ function Skills() {
                 — building automation frameworks, CI pipelines, and internal tooling that make complex behavior 
                 reproducible, failures visible early, and teams faster as a result.
                 <br></br><br></br>
-                <b><i>In practice that means</i></b>: deterministic test frameworks that give teams hard data 
-                before release, validation pipelines that behave identically across every environment and CI run, <br></br>
-                and production features that handle real-world edge cases without breaking the systems around them.
+                <b><i>In practice that means</i></b>: production features that handle real-world edge cases without breaking the systems around them, 
+                deterministic test frameworks that give teams hard data before release, 
+                and pipelines that behave identically across every environment and CI run. <br></br>
             </p><br></br>
         </div>
         <div className="skills-container">
             <h1>Skills</h1>
+            <p>
+                <b><i>Working in large, live codebases</i></b>: My professional work runs in production 
+                — in live, cross-platform games with millions of players. 
+                That means handling platform edge cases, working carefully across existing system boundaries, 
+                and being accountable to the teams who depend on what I build. 
+                Correctness and resilience aren't optional when a mistake affects a live product.
+            </p>
             <p>
                 <b><i>Deterministic systems thinking</i></b>: Reproducibility is a hard requirement in my work 
                 — not a nice-to-have. 
@@ -61,14 +68,7 @@ function Skills() {
                 I treat non-determinism as an engineering problem with an engineering solution.
             </p>
             <p>
-                <b><i>Shipping in large, live codebases</i></b>: My professional work runs in production 
-                — in live, cross-platform games with millions of players. 
-                That means handling platform edge cases, working carefully across existing system boundaries, 
-                and being accountable to the teams who depend on what I build. 
-                Correctness and resilience aren't optional when a mistake affects a live product.
-            </p>
-            <p>
-                <b><i>Infrastructure for teams, not just tasks</i></b>: I build things designed to be used 
+                <b><i>Infrastructure for teams</i></b>: I build things designed to be used 
                 — reusable libraries, modular architectures, frameworks adopted across multiple projects and teams. 
                 Good tooling reduces friction for the people it serves, so I care as much about the developer experience 
                 of a system as its technical correctness.

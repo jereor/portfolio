@@ -14,7 +14,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/jere-orava-a67445162/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Jere Orava</h1>
-          <p>Build & Automation Engineer</p>
+          <p>Game Programmer</p>
           <p><i>"I build systems where failures are visible, behavior is predictable, and teams can ship with confidence — from CI pipelines to production features."</i></p>
 
           <div className="mobile_social_icons">
