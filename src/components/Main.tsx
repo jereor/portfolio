@@ -15,7 +15,7 @@ function Main() {
           </div>
           <h1>Jere Orava</h1>
           <p>Game Programmer</p>
-          <p><i>"I build systems where failures are visible, behavior is predictable, and teams can ship with confidence — from CI pipelines to production features."</i></p>
+          <p><i>"I write game systems that hold up in production — and build the tooling that keeps teams from slowing down."</i></p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/jereor" target="_blank" rel="noreferrer"><GitHubIcon/></a>

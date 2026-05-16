@@ -37,17 +37,19 @@ function Skills() {
     <div className="container" id="skills">
         <div className="summary-container">
             <p>
-                Most development slowdowns aren't code problems — <b><i>they're systems problems.</i></b> <br></br>
-                Builds that behave differently across environments. Tests that pass locally and fail in CI. 
-                Features that work until an edge case surfaces in production. 
+                <b>I'm a game programmer</b> who ships gameplay systems and cares about the engineering underneath them.
                 <br></br><br></br>
-                <b><i>I solve that class of problem</i></b> 
-                — building automation frameworks, CI pipelines, and internal tooling that make complex behavior 
-                reproducible, failures visible early, and teams faster as a result.
+                <b>My professional work lives in production</b> — live-service features in Warframe Mobile, 
+                handling real platform edge cases in a large cross-platform codebase with millions of players. 
+                I've built gameplay/UI systems, and progression features that had to be correct, persistent, and resilient from day one.
                 <br></br><br></br>
-                <b><i>In practice that means</i></b>: production features that handle real-world edge cases without breaking the systems around them, 
-                deterministic test frameworks that give teams hard data before release, 
-                and pipelines that behave identically across every environment and CI run. <br></br>
+                <b>Alongside that, I have strong instincts in tooling and automation</b> 
+                — reusable frameworks in Unity, a deterministic performance testing framework on AWS Device Farm, 
+                and CI pipelines built for reproducibility. These aren't separate interests; 
+                they come from the same habit of thinking about what makes a codebase and a team sustainable.
+                <br></br><br></br>
+                I work in C++, C#, and Lua across Unreal Engine, Unity, and proprietary engines.<br></br>
+                I'm looking for a role where quality and engineering craft are both taken seriously.
             </p><br></br>
         </div>
         <div className="skills-container">
